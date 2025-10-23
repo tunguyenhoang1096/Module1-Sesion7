@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+  gap: 10px;
+  height: 100vh;
+  padding: 20px;
+}
+.padding {
+  padding: 10px;
+  color: white;
+}
+.header {
+  grid-area: header;
+  background-color: #3498db;
+}
+.sidebar {
+  grid-area: sidebar;
+  background-color: #2ecc71;
+}
+.content {
+  grid-area: content;
+  background-color: #e74c3c;
+}
+.footer {
+  grid-area: footer;
+  background-color: #9b59b6;
+}
